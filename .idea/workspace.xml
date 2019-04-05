@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84cd5889-52ce-45bf-8716-d22ed3b93a59" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/bddTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controlleur.php" beforeDir="false" afterPath="$PROJECT_DIR$/controlleur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controlleur/userControlleur.php" beforeDir="false" afterPath="$PROJECT_DIR$/controlleur/userControlleur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modele/connect/bdd.php" beforeDir="false" afterPath="$PROJECT_DIR$/controlleur/bddControlleur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modele/connect/user.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modele/registerform.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modele/userData.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modele/userStatut.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/userControlleurTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/userControlleurTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/headerUser.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/register.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +46,7 @@
         <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+              <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -228,16 +214,15 @@
       <workItem from="1554307695290" duration="1349000" />
       <workItem from="1554447113060" duration="17118000" />
       <workItem from="1554471090555" duration="1515000" />
-      <workItem from="1554473947039" duration="988000" />
+      <workItem from="1554473947039" duration="1959000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25649000" />
+    <option name="totallyTimeSpent" value="26620000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.53333336" visible="true" weight="0.14251012" />
       <window_info id="Structure" order="1" sideWeight="0.46666667" side_tool="true" weight="0.33360323" />
@@ -252,7 +237,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.24866785" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.39609236" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -384,7 +369,7 @@
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
         </state>
       </provider>
     </entry>
