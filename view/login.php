@@ -48,15 +48,13 @@
                         <div class="row align-items-center remember">
                             <input type="checkbox">Remember Me
                         </div>
-                        <div class="form-group">
-                            <input type="submit" value="Login" class="btn float-right login_btn">
+                        <div class="d-flex justify-content-center links">
+                            <input type="submit" value="login">
                         </div>
                     </form>
                 </div>
                 <div class="card-footer">
-                    <div class="d-flex justify-content-center links">
-                        Don't have an account?<a href="register.php">Sign Up</a>
-                    </div>
+
                 </div>
             </div>
         </div>

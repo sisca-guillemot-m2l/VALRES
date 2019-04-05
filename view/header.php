@@ -1,3 +1,28 @@
+<?php
+if(isset($_SESSION['id'])) {
+    $CaseOne = 'Deconnecter';
+    $PathOne = '?action=user-logout';
+    $CaseTwo = 'Reserver une salle';
+    $PathTwo = '?page=accessBuilding';
+    if ($_SESSION['statut']=='admin')
+    {
+        $CaseThree = "Obtenir le code d'accès";
+        $PathThree = '?action=user-send_sms';
+    }
+    else {
+        $CaseThree = '';
+        $PathThree = '';
+    }
+} else {
+    $CaseOne = 'Home';
+    $PathOne = '?page=accueil';
+    $CaseTwo = 'Login';
+    $PathTwo =  '?page=login';
+    $CaseThree = 'Register';
+    $PathThree = '?page=register';
+}
+?>
+
 <head>
     <link rel="stylesheet" href="css/style.css">
     <!-- bootstrap -->
@@ -17,16 +42,13 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="?page=accueil">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="<?=$PathOne;?>"><?=$CaseOne;?> <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="?page=login">Log In</a>
+        <a class="nav-link" href="<?=$PathTwo;?>"><?=$CaseTwo;?></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="?page=register">register</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="?page=userpage">Go to userpage</a>
+        <a class="nav-link" href="<?=$PathThree;?>"><?=$CaseThree;?></a>
       </li>
     </ul>
   </div>

@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84cd5889-52ce-45bf-8716-d22ed3b93a59" name="Default Changelist" comment="" />
+    <list default="true" id="84cd5889-52ce-45bf-8716-d22ed3b93a59" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test/bddTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controlleur.php" beforeDir="false" afterPath="$PROJECT_DIR$/controlleur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controlleur/userControlleur.php" beforeDir="false" afterPath="$PROJECT_DIR$/controlleur/userControlleur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modele/connect/bdd.php" beforeDir="false" afterPath="$PROJECT_DIR$/controlleur/bddControlleur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modele/connect/user.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modele/registerform.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modele/userData.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modele/userStatut.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/userControlleurTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/userControlleurTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/headerUser.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/register.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,23 +29,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controlleur.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+            <state relative-caret-position="731">
+              <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/userControlleurTest.php">
+        <entry file="file://$PROJECT_DIR$/view/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-              <folding>
-                <element signature="e#26#57#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controlleur/userControlleur.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="79" column="7" selection-start-line="79" selection-start-column="7" selection-end-line="79" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -38,30 +69,49 @@
         <entry file="file://$PROJECT_DIR$/vendor/bin/phpunit">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controlleur/userControlleur.php">
+        <entry file="file://$PROJECT_DIR$/vendor/composer/installed.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controlleur/bddControlleur.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            <state relative-caret-position="544">
+              <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/test/Math.php" />
         <option value="$PROJECT_DIR$/test/MathTest.php" />
-        <option value="$PROJECT_DIR$/controlleur/userControlleur.php" />
+        <option value="$PROJECT_DIR$/test/bddTest.php" />
         <option value="$PROJECT_DIR$/test/userControlleurTest.php" />
+        <option value="$PROJECT_DIR$/modele/registerform.php" />
+        <option value="$PROJECT_DIR$/modele/userData.php" />
+        <option value="$PROJECT_DIR$/modele/userStatut.php" />
+        <option value="$PROJECT_DIR$/view/register.php" />
+        <option value="$PROJECT_DIR$/view/login.php" />
+        <option value="$PROJECT_DIR$/view/page.php" />
+        <option value="$PROJECT_DIR$/controlleur/user.php" />
         <option value="$PROJECT_DIR$/controlleur.php" />
+        <option value="$PROJECT_DIR$/controlleur/bddControlleur.php" />
+        <option value="$PROJECT_DIR$/view/header.php" />
+        <option value="$PROJECT_DIR$/controlleur/userControlleur.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
       </list>
     </option>
   </component>
@@ -103,7 +153,9 @@
     <option name="width" value="981" />
     <option name="height" value="1032" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <showMembers ProjectPane="true" />
@@ -125,18 +177,7 @@
             <path>
               <item name="composer" type="b2602c69:ProjectViewProjectNode" />
               <item name="composer" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="composer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="composer" type="462c0819:PsiDirectoryNode" />
               <item name="vendor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="composer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="composer" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -150,6 +191,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\composer\controlleur" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -180,17 +226,41 @@
       <workItem from="1554220997849" duration="2807000" />
       <workItem from="1554275347444" duration="532000" />
       <workItem from="1554307695290" duration="1349000" />
+      <workItem from="1554447113060" duration="17118000" />
+      <workItem from="1554471090555" duration="1515000" />
+      <workItem from="1554473947039" duration="988000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6028000" />
+    <option name="totallyTimeSpent" value="25649000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.53333336" visible="true" weight="0.20566802" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.53333336" visible="true" weight="0.14251012" />
+      <window_info id="Structure" order="1" sideWeight="0.46666667" side_tool="true" weight="0.33360323" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.24866785" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.53333336" visible="true" weight="0.13765182" />
       <window_info id="Structure" order="1" sideWeight="0.46666667" side_tool="true" weight="0.33360323" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -203,13 +273,13 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.59857905" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.24866785" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -217,34 +287,104 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test/Math.php" />
     <entry file="file://$PROJECT_DIR$/test/MathTest.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/src/Runner/StandardTestSuiteLoader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/bddTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/userControlleurTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding>
-            <element signature="e#26#57#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modele/userStatut.php" />
+    <entry file="file://$PROJECT_DIR$/modele/registerform.php" />
+    <entry file="file://$PROJECT_DIR$/view/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="784">
+          <caret line="51" column="61" selection-start-line="51" selection-start-column="61" selection-end-line="51" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/ressource.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controlleur/user.php" />
+    <entry file="file://$PROJECT_DIR$/modele/userData.php" />
+    <entry file="file://$PROJECT_DIR$/view/headerUser.php" />
+    <entry file="file://$PROJECT_DIR$/view/userpage.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="57" column="64" selection-start-line="57" selection-start-column="64" selection-end-line="57" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/planning.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controlleur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controlleur/bddControlleur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/bin/phpunit">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/composer/installed.json">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/controlleur/userControlleur.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        <state relative-caret-position="239">
+          <caret line="79" column="7" selection-start-line="79" selection-start-column="7" selection-end-line="79" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controlleur.php">
+    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+        <state relative-caret-position="68">
+          <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
         </state>
       </provider>
     </entry>

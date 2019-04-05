@@ -1,6 +1,6 @@
 <?php
 
-class bdd
+class bddControlleur
 {
     private $dbh;
     public function _connect ()
@@ -26,11 +26,11 @@ class bdd
         }
     }
 
-    public function queryArray ($query)
+    public function queryArray ($query, array $values=array())
     {
         try {
             $sth = $this->dbh->prepare($query);
-            $sth->execute();
+            $sth->execute($values);
             $result = $sth->fetchAll(PDO::FETCH_ASSOC);
             return $result;
         }

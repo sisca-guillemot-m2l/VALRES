@@ -53,18 +53,16 @@
                                 <span class="input-group-text"><i class="fas fa-user"></i></span>
                             </div>
                             <input type="email" class="form-control" name="email" placeholder="email">
-
                         </div>
-
-                        <div class="form-group">
-                            <input type="submit" value="Register" class="btn float-right login_btn">
+                        <div class="d-flex justify-content-center links">
+                            <input type="submit" value="register">
                         </div>
                     </form>
                 </div>
-                <div class="card-footer">
+            <!--     <div class="card-footer">
                     <div class="d-flex justify-content-center">
                         <a href="#">Forgot your password?</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
