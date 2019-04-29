@@ -2,7 +2,7 @@
 
 
 use PHPUnit\Framework\TestCase;
-//use UserControlleurUnit\userControlleur;
+use PHPUnit\DbUnit\TestCaseTrait;
 
 class userControlleurTest extends TestCase
 {
@@ -10,10 +10,17 @@ class userControlleurTest extends TestCase
         $this->assertEquals(4, 2*2);
     }
 
-    public function loginTest (){
-        $bdd = new bddControlleur();
+    use TestCaseTrait;
 
+    /**
+     * @return PHPUnit_Extensions_Database_DB_IDatabaseConnection
+     */
+    public function getConnection()
+    {
+        $pdo = new PDO('sqlite::memory:');
+        return $this->createDefaultDBConnection($pdo, ':memory:');
     }
+
 
 }
 

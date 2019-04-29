@@ -17,9 +17,10 @@ class userControlleur
 
         if  (password_verify ( $password , $checkPassword))
         {
-            $value = $bdd->queryDisplay('SELECT id,statut FROM user WHERE username=:username', array('username'=>$username));
+            $value = $bdd->queryDisplay('SELECT id,statut,username FROM user WHERE username=:username', array('username'=>$username));
             $_SESSION['id'] = $value['id'];
             $_SESSION['statut'] = $value['statut'];
+            $_SESSION['name'] = $value['username'];
             //echo $value['id'];
             //echo $value['statut'];
             header ('refresh:0;url=?page=userpage');
@@ -62,10 +63,12 @@ class userControlleur
         header ('refresh:0;url=?page=accueil');
     }
 
-   /* function send_sms($num, $texte, $emetteur, $ref) {
+    function send_sms($num, $texte, $emetteur, $ref) {
         $url = 'https://api.smsmode.com/http/1.6/sendSMS.do';
         $texte = iconv("UTF-8", "ISO-8859-15", $texte);
-        $fields_string = 'accessToken=AAAAZZZZZZxxxxxxYYYYYYYY&message='.urlencode($texte).'&numero='.$num.'&emetteur='.$emetteur.'&refClient='.$ref.'&stop=1';
+        $fields_string = 'accessToken=GHpM3IVW5Pi0L4WkkuwazEcetF3B53ac&message='.urlencode($texte).'&numero='.$num.'&emetteur='.$emetteur.'&refClient='.$ref.'&stop=1';
+
+        echo $fields_string;
 
         $ch = curl_init();
 
@@ -76,6 +79,13 @@ class userControlleur
         $result = curl_exec($ch);
 
         curl_close($ch);
+        var_dump($result);
+
         return $result;
-    }*/
+    }
+
+    public function sendMessage () {
+        //$this->send_sms("#mon numero de tel","Ceci est un test", "#mon numero de tel", "ref123");
+        header ('refresh:0;url=?page=userPage');
+    }
 }

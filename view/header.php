@@ -1,13 +1,14 @@
 <?php
+// Faire un tableau
 if(isset($_SESSION['id'])) {
     $CaseOne = 'Deconnecter';
     $PathOne = '?action=user-logout';
     $CaseTwo = 'Reserver une salle';
-    $PathTwo = '?page=accessBuilding';
+    $PathTwo = 'http://'.HOSTMRBS.'/mrbs/web/';
     if ($_SESSION['statut']=='admin')
     {
         $CaseThree = "Obtenir le code d'accès";
-        $PathThree = '?action=user-send_sms';
+        $PathThree = '?action=user-sendMessage';
     }
     else {
         $CaseThree = '';

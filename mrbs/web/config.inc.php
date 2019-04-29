@@ -10,7 +10,7 @@ namespace MRBS;
  *   variables that you will need to change to get your system up and running.
  *   If you want to change any of the other settings in systemdefaults.inc.php
  *   or areadefaults.inc.php, then copy the relevant lines into this file
- *   and edit them here.   This file will override the default settings and
+ *   and edit them here.   This file will over ride the default settings and
  *   when you upgrade to a new version of MRBS the config file is preserved.
  *
  *   NOTE: if you include or require other files from this file, for example
@@ -61,7 +61,7 @@ $db_database = "mrbs";
 // Database login user name:
 $db_login = "root";
 // Database login password:
-$db_password = 'rootroot';
+$db_password = 'adminadmin';
 // Prefix for table names.  This will allow multiple installations where only
 // one database is available
 $db_tbl_prefix = "mrbs_";

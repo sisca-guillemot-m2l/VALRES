@@ -13,6 +13,8 @@ class bddControlleur
         }
     }
 
+
+
     public function queryDisplay ($query, array $values=array())
     {
         try {
@@ -39,7 +41,18 @@ class bddControlleur
         }
     }
 
-
+    public function queryStatement ($query)
+    {
+        try {
+            $sth = $this->dbh->prepare($query);
+            $sth->execute();
+            $result = $sth->fetchAll(PDO::FETCH_ASSOC);
+            return $result;
+        }
+        catch (PDOException $e) {
+            print $e->getMessage();
+        }
+    }
 }
 ?>
 

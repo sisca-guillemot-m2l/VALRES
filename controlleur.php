@@ -5,11 +5,18 @@
     define("DS", DIRECTORY_SEPARATOR); // permet de mettre le / ou \ en fonction de linux ou windows
     define("PATHVIEW",PATHROOT.DS.'view'.DS);
     define("PATHMODELE", PATHROOT.DS.'modele'.DS);
-    define("PATHCTRL",PATHROOT.DS.'controlleur.'.DS);
+    define("PATHCTRL",PATHROOT.DS.'controlleur'.DS);
     define("PATHIMG", PATHROOT.DS.'img'.DS);
-    define ("PATHTEST", PATHROOT.DS.'test'.DS);
-    require PATHROOT.DS.'conf/ressource.php';
+    define("PATHTEST", PATHROOT.DS.'test'.DS);
+    //define("PATHMRBS", PATHROOT.DS.'mrbs'.DS);
+    require_once PATHROOT.DS.'conf/ressource.php';
     require_once PATHROOT.DS.'vendor/autoload.php';
+
+    function autoLoadModele ($modeleName) {
+        if (file_exists(PATHMODELE.$modeleName.'.php')) {
+            require_once PATHMODELE.$modeleName.'php';
+        }
+    }
 
     function autoLoadController($controllerName) {
         if(file_exists(PATHCTRL.$controllerName.'.php')) {
@@ -29,6 +36,7 @@
     $content = FILTER_INPUT(INPUT_GET, 'page', FILTER_SANITIZE_STRING);
     $action = FILTER_INPUT(INPUT_GET, 'action', FILTER_SANITIZE_STRING);
     $link = FILTER_INPUT (INPUT_GET, 'href', FILTER_SANITIZE_STRING);
+    $booking =FILTER_INPUT (INPUT_GET, 'mrbs', FILTER_SANITIZE_STRING);
 
     if (!is_null($action))
     {
@@ -42,10 +50,15 @@
     if (isset ($_SESSION['id'])) {
         var_dump($_SESSION['id']);
         var_dump($_SESSION['statut']);
+        var_dump($_SESSION['name']);
     }
     if (is_null($content))
     {
         $content = 'accueil';
+    }
+    if (is_null($booking))
+    {
+        $controlleurMRBSName = $booking.'mrbs';
     }
 
 
