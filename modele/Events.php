@@ -23,8 +23,8 @@ class Events
         $sql = $bdd->queryStatement("SELECT * FROM calendar WHERE start BETWEEN '{$start->format('Y-m-d 00:00:00')}' AND '{$end->format('Y-m-d 23:59:59')}'");
 
         //$sql = "SELECT * FROM events WHERE start BETWEEN '{$start->format('Y-m-d 00:00:00')}' AND '{$end->format('Y-m-d 23:59:59')}'";
-        var_dump($sql);
-        return [];
+        //var_dump($sql);
+        return $sql;
     }
 
 
@@ -37,17 +37,43 @@ class Events
      */
     public function getEventsBetweenByDay(\DateTime $start, \DateTime $end): array
     {
+
         $events = $this->getEventsBetween($start, $end);
         $days = [];
         foreach ($events as $event) {
             $date = explode(' ', $event['start'])[0];
             if (!isset($days[$date])) {
-                $days['date'] = [$event];
+                $days[$date] = [$event];
             } else {
-                $days['$date'][] = $event;
+                $days[$date][] = $event;
             }
         }
-
+        //var_dump($days);
         return $days;
     }
+
+    /**
+     * @param int $id
+     * @return array
+     */
+    /*public function find (int $id): array
+    {
+        $bdd = new \bddControlleur();
+        $bdd->_connect();
+        $value = $bdd->queryStatement("SELECT * FROM calendar WHERE id=$id");
+        if ($value == false) {
+            $value = null;
+        }
+        return $value;
+    }*/
+
+
+    public function find (int $id): array
+    {
+        $bdd = new \bddControlleur();
+        $bdd->_connect();
+        $value = $bdd->queryStatement("SELECT * FROM calendar WHERE id=$id");
+        return $value;
+    }
+
 }
