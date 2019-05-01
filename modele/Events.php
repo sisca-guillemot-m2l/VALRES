@@ -1,6 +1,8 @@
 <?php
 
 namespace modele\Events;
+use calendar\EventCalendar;
+
 require_once '../controlleur/bddControlleur.php';
 require_once '../conf/ressource.php';
 
@@ -52,28 +54,34 @@ class Events
         return $days;
     }
 
+
     /**
      * @param int $id
      * @return array
      */
-    /*public function find (int $id): array
-    {
-        $bdd = new \bddControlleur();
-        $bdd->_connect();
-        $value = $bdd->queryStatement("SELECT * FROM calendar WHERE id=$id");
-        if ($value == false) {
-            $value = null;
-        }
-        return $value;
-    }*/
-
-
     public function find (int $id): array
     {
         $bdd = new \bddControlleur();
         $bdd->_connect();
         $value = $bdd->queryStatement("SELECT * FROM calendar WHERE id=$id");
         return $value;
+    }
+
+    public function create (EventCalendar $event) {
+        // 1: Récupérer valeur
+        $name = $event->getName();
+        $description = $event->getDescription();
+        $start = $event->getStart()->format('Y-m-d H:i:s');
+        $end = $event->getEnd()->format('Y-m-d H:i:s');
+
+        // 2 : connexion à la BDD
+        $bdd = new \bddControlleur();
+        $bdd->_connect();
+
+        // 3 : Envoi à la BDD (insert)
+        //var_dump($event);
+        $bdd->queryStatement("INSERT INTO calendar (name, description, start, end) 
+          VALUES ('$name', '$description', '$start', '$end')");
     }
 
 }

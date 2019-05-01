@@ -35,7 +35,7 @@ class EventCalendar
         return $this->name;
     }
 
-    public function getDescription(): string {
+    public function getDescription() {
         return $this->description;
     }
 
@@ -55,4 +55,19 @@ class EventCalendar
         echo 'end : '.$this->end.'<br>';
     }
 
+    public function setName (string $name) {
+        $this->name = $name;
+    }
+
+    public function setDescription ($description) {
+        $this->description = $description;
+    }
+
+    public function setStart ($start) {
+        $this->start = $start;
+    }
+
+    public function setEnd ($end) {
+        $this->end = $end;
+    }
 }
