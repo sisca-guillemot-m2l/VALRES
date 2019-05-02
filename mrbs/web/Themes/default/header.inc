@@ -103,7 +103,7 @@ function print_goto_date($day, $month, $year, $area, $room)
   
   if (isset($room))
   {
-    $form->addHiddenInput('room', $room);
+    $form->addHiddenInput('roomControlleur', $room);
   }
   
   $input = new ElementInputDate();
@@ -179,7 +179,7 @@ function print_search($day, $month, $year, $area, $room, $search_str=null)
   }
   if (!empty($room))
   {
-    $form->addHiddenInput('room', $room);
+    $form->addHiddenInput('roomControlleur', $room);
   }
   
   $input = new ElementInputSearch();

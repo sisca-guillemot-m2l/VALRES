@@ -1238,7 +1238,7 @@ function get_match_condition($full_column_name, $match, &$sql_params)
   // Get the table name and alias
   $aliases = array('area'  => 'A',
                    'entry' => 'E',
-                   'room'  => 'R');
+                   'roomControlleur' => 'R');
                    
   list($table_alias, $column) = explode('.', $full_column_name, 2);
   $table = array_search($table_alias, $aliases);
@@ -1599,12 +1599,12 @@ if ($phase == 2)
   }
   elseif ($sortby == "r")
   {
-    // Order by Area, Room, Start date/time
+    // Order by Area, roomControlleur, Start date/time
     $sql .= " ORDER BY A.sort_key, R.sort_key, start_time";
   }
   else
   {
-    // Order by Start date/time, Area, Room
+    // Order by Start date/time, Area, roomControlleur
     $sql .= " ORDER BY start_time, A.sort_key, R.sort_key";
   }
 

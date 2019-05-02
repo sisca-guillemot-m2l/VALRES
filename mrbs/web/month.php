@@ -460,7 +460,7 @@ if ($room_invalid)
   exit;
 }
 
-// Show Month, Year, Area, Room header:
+// Show Month, Year, Area, roomControlleur header:
 echo "<div id=\"dwm\">\n";
 echo "<h2>" . utf8_strftime($strftime_format['monthyear'], $month_start)
   . " - " . htmlspecialchars("$this_area_name - $this_room_name") . "</h2>\n";

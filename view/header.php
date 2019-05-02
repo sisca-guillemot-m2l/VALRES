@@ -5,14 +5,24 @@ if(isset($_SESSION['id'])) {
     $PathOne = '?action=user-logout';
     $CaseTwo = 'Reserver une salle';
     $PathTwo = 'http://'.HOSTMRBS.'/mrbs/web/';
+    $CaseThree = 'Calendar';
+    $PathThree = '../calendar';
     if ($_SESSION['statut']=='admin')
     {
-        $CaseThree = "Obtenir le code d'accès";
-        $PathThree = '?action=user-sendMessage';
+        $CaseFour = "Obtenir le code d'accès";
+        $PathFour = '?action=user-sendMessage';
+        $CaseFive = 'Ajouter une salle';
+        $PathFive = '?page=addRoom';
+        $CaseSix = 'Ajouter une ligue';
+        $PathSix = '?page=addLeague';
     }
     else {
-        $CaseThree = '';
-        $PathThree = '';
+        $CaseFour = '';
+        $PathFour = '';
+        $CaseFive = '';
+        $PathFive = '';
+        $CaseSix = '';
+        $PathSix = '';
     }
 } else {
     $CaseOne = 'Home';
@@ -21,6 +31,12 @@ if(isset($_SESSION['id'])) {
     $PathTwo =  '?page=login';
     $CaseThree = 'Register';
     $PathThree = '?page=register';
+    $CaseFour = 'Calendar';
+    $PathFour = '../calendar';
+    $CaseFive = '';
+    $PathFive = '';
+    $CaseSix = '';
+    $PathSix = '';
 }
 ?>
 
@@ -36,21 +52,30 @@ if(isset($_SESSION['id'])) {
 </head>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="<?=$PathOne;?>"><?=$CaseOne;?> <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="<?=$PathTwo;?>"><?=$CaseTwo;?></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="<?=$PathThree;?>"><?=$CaseThree;?></a>
-      </li>
-    </ul>
-  </div>
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="<?=$PathOne;?>"><?=$CaseOne;?> <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?=$PathTwo;?>"><?=$CaseTwo;?></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?=$PathThree;?>"><?=$CaseThree;?></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?=$PathFour;?>"><?=$CaseFour;?></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?=$PathFive;?>"><?=$CaseFive;?></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?=$PathSix;?>"><?=$CaseSix;?></a>
+            </li>
+        </ul>
+    </div>
 </nav>

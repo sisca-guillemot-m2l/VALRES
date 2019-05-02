@@ -2,12 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84cd5889-52ce-45bf-8716-d22ed3b93a59" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/modele/EventValidator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modele/Validator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controlleur/leagueControlleur.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controlleur/roomControlleur.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modele/Room.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/addLeague.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/addRoom.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/hearderTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/calendar/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/calendar/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controlleur/bddControlleur.php" beforeDir="false" afterPath="$PROJECT_DIR$/controlleur/bddControlleur.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modele/EventCalendar.php" beforeDir="false" afterPath="$PROJECT_DIR$/modele/EventCalendar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modele/Events.php" beforeDir="false" afterPath="$PROJECT_DIR$/modele/Events.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mrbs/web/Themes/default/header.inc" beforeDir="false" afterPath="$PROJECT_DIR$/mrbs/web/Themes/default/header.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mrbs/web/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/mrbs/web/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mrbs/web/dbsys.inc" beforeDir="false" afterPath="$PROJECT_DIR$/mrbs/web/dbsys.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mrbs/web/del.php" beforeDir="false" afterPath="$PROJECT_DIR$/mrbs/web/del.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mrbs/web/edit_room.php" beforeDir="false" afterPath="$PROJECT_DIR$/mrbs/web/edit_room.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mrbs/web/functions.inc" beforeDir="false" afterPath="$PROJECT_DIR$/mrbs/web/functions.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mrbs/web/functions_mail.inc" beforeDir="false" afterPath="$PROJECT_DIR$/mrbs/web/functions_mail.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mrbs/web/functions_table.inc" beforeDir="false" afterPath="$PROJECT_DIR$/mrbs/web/functions_table.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mrbs/web/functions_view.inc" beforeDir="false" afterPath="$PROJECT_DIR$/mrbs/web/functions_view.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mrbs/web/grab_globals.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/mrbs/web/grab_globals.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mrbs/web/internalconfig.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/mrbs/web/internalconfig.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mrbs/web/month.php" beforeDir="false" afterPath="$PROJECT_DIR$/mrbs/web/month.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mrbs/web/report.php" beforeDir="false" afterPath="$PROJECT_DIR$/mrbs/web/report.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mrbs/web/standard_vars.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/mrbs/web/standard_vars.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mrbs/web/systemdefaults.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/mrbs/web/systemdefaults.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/header.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,29 +40,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/calendar/add.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/addLeague.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+            <state relative-caret-position="357">
+              <caret line="21" column="70" selection-start-line="21" selection-start-column="70" selection-end-line="21" selection-end-column="70" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modele/EventCalendar.php">
+        <entry file="file://$PROJECT_DIR$/view/addRoom.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="19" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="19" />
+              <caret line="7" column="95" selection-start-line="7" selection-start-column="95" selection-end-line="7" selection-end-column="95" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modele/Events.php">
+        <entry file="file://$PROJECT_DIR$/controlleur/roomControlleur.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="83" column="59" selection-start-line="83" selection-start-column="59" selection-end-line="83" selection-end-column="59" />
+            <state relative-caret-position="255">
+              <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/calendar/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controlleur/leagueControlleur.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="98" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="98" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controlleur/bddControlleur.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controlleur/userControlleur.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="121" />
             </state>
           </provider>
         </entry>
@@ -91,7 +147,6 @@
         <option value="$PROJECT_DIR$/view/userpage.php" />
         <option value="$PROJECT_DIR$/controlleur/userControlleur.php" />
         <option value="$PROJECT_DIR$/mrbs/web/config.inc.php" />
-        <option value="$PROJECT_DIR$/view/header.php" />
         <option value="$PROJECT_DIR$/modele/date/month.php" />
         <option value="$PROJECT_DIR$/modele/date/Month.php" />
         <option value="$PROJECT_DIR$/controlleur.php" />
@@ -100,20 +155,31 @@
         <option value="$PROJECT_DIR$/modele/Month.php" />
         <option value="$PROJECT_DIR$/calendar/Events.php" />
         <option value="$PROJECT_DIR$/conf/ressource.php" />
-        <option value="$PROJECT_DIR$/calendar/header.php" />
         <option value="$PROJECT_DIR$/calendar/footer.php" />
         <option value="$PROJECT_DIR$/calendar/404.php" />
         <option value="$PROJECT_DIR$/modele/Event.php" />
-        <option value="$PROJECT_DIR$/controlleur/bddControlleur.php" />
         <option value="$PROJECT_DIR$/calendar/event.php" />
         <option value="$PROJECT_DIR$/calendar/index.php" />
         <option value="$PROJECT_DIR$/calendar/calendar.css" />
         <option value="$PROJECT_DIR$/modele/Validate.php" />
-        <option value="$PROJECT_DIR$/modele/EventValidator.php" />
         <option value="$PROJECT_DIR$/modele/Validator.php" />
-        <option value="$PROJECT_DIR$/modele/EventCalendar.php" />
         <option value="$PROJECT_DIR$/modele/Events.php" />
         <option value="$PROJECT_DIR$/calendar/add.php" />
+        <option value="$PROJECT_DIR$/modele/Room.php" />
+        <option value="$PROJECT_DIR$/modele/EventCalendar.php" />
+        <option value="$PROJECT_DIR$/modele/EventValidator.php" />
+        <option value="$PROJECT_DIR$/calendar/addRoom.php" />
+        <option value="$PROJECT_DIR$/view/hearderTest.php" />
+        <option value="$PROJECT_DIR$/modele/League.php" />
+        <option value="$PROJECT_DIR$/controlleur/leagueController.php" />
+        <option value="$PROJECT_DIR$/controlleur/bddControlleur.php" />
+        <option value="$PROJECT_DIR$/controlleur/leagueControlleur.php" />
+        <option value="$PROJECT_DIR$/controlleur/Room.php" />
+        <option value="$PROJECT_DIR$/view/addLeague.php" />
+        <option value="$PROJECT_DIR$/view/header.php" />
+        <option value="$PROJECT_DIR$/view/addRoom.php" />
+        <option value="$PROJECT_DIR$/controlleur/roomControlleur.php" />
+        <option value="$PROJECT_DIR$/calendar/header.php" />
       </list>
     </option>
   </component>
@@ -150,7 +216,7 @@
       <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="948" />
     <option name="width" value="981" />
     <option name="height" value="1032" />
@@ -180,7 +246,17 @@
             <path>
               <item name="composer" type="b2602c69:ProjectViewProjectNode" />
               <item name="composer" type="462c0819:PsiDirectoryNode" />
+              <item name="controlleur" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="composer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="composer" type="462c0819:PsiDirectoryNode" />
               <item name="modele" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="composer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="composer" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -198,6 +274,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\composer\view" />
       <recent name="C:\wamp64\www\composer\modele" />
       <recent name="C:\wamp64\www\composer\controlleur" />
     </key>
@@ -262,17 +339,21 @@
       <workItem from="1556646488710" duration="2965000" />
       <workItem from="1556701284916" duration="1804000" />
       <workItem from="1556707168073" duration="5650000" />
+      <workItem from="1556722440093" duration="2871000" />
+      <workItem from="1556741541788" duration="2740000" />
+      <workItem from="1556785995626" duration="8988000" />
+      <workItem from="1556821967730" duration="931000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124244000" />
+    <option name="totallyTimeSpent" value="139774000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.53333336" visible="true" weight="0.1465587" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.53333336" visible="true" weight="0.1562753" />
       <window_info id="Structure" order="1" sideWeight="0.46666667" side_tool="true" weight="0.33360323" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -287,7 +368,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.38543516" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3285968" />
-      <window_info anchor="bottom" id="File Transfer" order="12" weight="0.3428064" />
+      <window_info anchor="bottom" id="File Transfer" order="12" weight="0.27708703" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -320,33 +401,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/MathTest.php" />
-    <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/src/Runner/StandardTestSuiteLoader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="98" selection-start-line="98" selection-end-line="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modele/userStatut.php" />
-    <entry file="file://$PROJECT_DIR$/modele/registerform.php" />
-    <entry file="file://$PROJECT_DIR$/view/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="51" column="61" selection-start-line="51" selection-start-column="61" selection-end-line="51" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controlleur/user.php" />
-    <entry file="file://$PROJECT_DIR$/modele/userData.php" />
-    <entry file="file://$PROJECT_DIR$/view/headerUser.php" />
     <entry file="file://$PROJECT_DIR$/view/register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="501">
@@ -388,20 +442,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/userPage.css" />
-    <entry file="file://$PROJECT_DIR$/view/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/userpage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" column="50" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/calendar/css/calendar.css" />
     <entry file="file://$PROJECT_DIR$/root/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -464,13 +504,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controlleur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -492,13 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controlleur/userControlleur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="34" column="31" lean-forward="true" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modele/Month.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -507,31 +533,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modele/Event.php" />
-    <entry file="file://$PROJECT_DIR$/controlleur/bddControlleur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/calendar/calendar.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="614">
           <caret line="47" column="80" selection-start-line="47" selection-start-column="80" selection-end-line="47" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modele/Validator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1165">
-          <caret line="70" column="1" lean-forward="true" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/calendar/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -542,13 +547,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/calendar/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/calendar/event.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -556,31 +554,144 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modele/EventValidator.php">
+    <entry file="file://$PROJECT_DIR$/modele/Room.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+        <state relative-caret-position="391">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modele/Validator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="7" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modele/Events.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
+        <state relative-caret-position="1411">
           <caret line="83" column="59" selection-start-line="83" selection-start-column="59" selection-end-line="83" selection-end-column="59" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modele/EventCalendar.php">
+    <entry file="file://$PROJECT_DIR$/modele/EventValidator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="19" />
+        <state relative-caret-position="357">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/hearderTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controlleur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/userpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calendar/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="32" column="39" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/calendar/add.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="71" column="35" lean-forward="true" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modele/EventCalendar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modele/League.php" />
+    <entry file="file://$PROJECT_DIR$/view/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="33" column="52" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="76" column="69" selection-start-line="76" selection-start-column="69" selection-end-line="76" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/addLeague.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="70" selection-start-line="21" selection-start-column="70" selection-end-line="21" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/addRoom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="95" selection-start-line="7" selection-start-column="95" selection-end-line="7" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controlleur/leagueControlleur.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+          <caret line="13" column="98" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controlleur/bddControlleur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controlleur/userControlleur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controlleur/roomControlleur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calendar/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
         </state>
       </provider>
     </entry>

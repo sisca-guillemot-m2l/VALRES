@@ -10,7 +10,7 @@ $day = get_form_var('day', 'int');
 $month = get_form_var('month', 'int');
 $year = get_form_var('year', 'int');
 $area = get_form_var('area', 'int');
-$room = get_form_var('room', 'int');
+$room = get_form_var('roomControlleur', 'int');
 
 if (empty($area))
 {

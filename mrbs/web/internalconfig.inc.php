@@ -408,7 +408,7 @@ $standard_fields['repeat'] = array('id',
                                    'ical_uid',
                                    'ical_sequence');
 
-$standard_fields['room'] = array('id',
+$standard_fields['roomControlleur'] = array('id',
                                  'disabled',
                                  'area_id',
                                  'room_name',

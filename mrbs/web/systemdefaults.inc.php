@@ -367,7 +367,7 @@ $display_calendar_bottom = false;
 $default_view = "day";
 
 // Define default room to start with (used by index.php)
-// Room numbers can be determined by looking at the Edit or Delete URL for a
+// roomControlleur numbers can be determined by looking at the Edit or Delete URL for a
 // room on the admin page.
 // Default is 0
 $default_room = 0;
@@ -1217,7 +1217,7 @@ $cli_language = "en";
 // You can override the text strings that appear in the lang.* files by setting
 // $vocab_override[LANG][TOKEN] in your config file, where LANG is the language,
 // for example 'en' and TOKEN is the key of the $vocab array.  For example to
-// alter the string "Meeting Room Booking System" in English set
+// alter the string "Meeting roomControlleur Booking System" in English set
 //
 // $vocab_override['en']['mrbs'] = "My Resource Booking System";
 //

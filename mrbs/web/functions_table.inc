@@ -601,7 +601,7 @@ function time_cell_html($s, $url)
 function room_cell_html($row, $link)
 {
   $html = '';
-  $html .= tdcell("row_labels", 1, array('name' => 'room', 'value' => $row['id']));
+  $html .= tdcell("row_labels", 1, array('name' => 'roomControlleur', 'value' => $row['id']));
   $html .= "<div class=\"celldiv slots1\">\n";
   $html .= "<a href=\"$link\" title=\"" . get_vocab("viewweek") . " &#10;&#10;" . $row['description'] . "\">";
   $html .= htmlspecialchars($row['room_name']) . ($row['capacity'] > 0 ? "(".$row['capacity'].")" : "");
@@ -798,7 +798,7 @@ function day_table_innerhtml($day, $month, $year, $room_id, $area_id, $timetohig
   {
     // with times along the top and rooms down the side
     $first_last_html = '<th class="first_last" style="width: ' . $first_last_width . '%">' . 
-                       get_vocab('room') . "</th>\n";
+                       get_vocab('roomControlleur') . "</th>\n";
     $header_inner .= $first_last_html;
     
     $column_width = get_main_column_width($n_time_slots);

@@ -3,7 +3,7 @@ namespace MRBS;
 
 global $dbsys, $db_tbl_prefix, $db_schema;
 
-$tables = array('area', 'entry', 'repeat', 'room', 'sessions', 'users', 'variables', 'zoneinfo');
+$tables = array('area', 'entry', 'repeat', 'roomControlleur', 'sessions', 'users', 'variables', 'zoneinfo');
 $table_vars = array();
 
 foreach ($tables as $table)

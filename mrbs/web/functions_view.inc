@@ -162,7 +162,7 @@ function create_details_body($data, $as_html=false, $keep_private=false, $room_d
         break;
           
       case 'room_id':
-        // Room
+        // roomControlleur
         $value = $data['area_name'] . " - " . $data['room_name'];
         if ($room_disabled)
         {

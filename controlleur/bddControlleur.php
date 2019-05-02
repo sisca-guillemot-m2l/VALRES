@@ -28,6 +28,19 @@ class bddControlleur
         }
     }
 
+    public function querySimple ($query)
+    {
+        try {
+            $sth = $this->dbh->prepare($query);
+            $sth->execute();
+            $result = $sth->fetch(PDO::FETCH_ASSOC);
+            return $result;
+        }
+        catch (PDOException $e) {
+            print $e->getMessage();
+        }
+    }
+
     public function queryArray ($query, array $values=array())
     {
         try {

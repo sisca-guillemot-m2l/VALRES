@@ -2,7 +2,7 @@
 namespace MRBS;
 
 // +---------------------------------------------------------------------------+
-// | Meeting Room Booking System.                                              |
+// | Meeting roomControlleur Booking System.                                              |
 // +---------------------------------------------------------------------------+
 // | Functions dedicated to emails handling.                                   |
 // |---------------------------------------------------------------------------+
@@ -532,7 +532,7 @@ function create_body($data, $mail_previous, $compare, $series, $action, $as_html
                                       $compare, $as_html);
     }
                                
-    // Room:
+    // roomControlleur:
     $new_room = $data['area_name'] . " - " . $data['room_name'];
     $old_room = $mail_previous['area_name'] . " - " . $mail_previous['room_name'];
     $body .= create_body_table_row (get_mail_vocab("room"),

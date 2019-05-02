@@ -2,7 +2,7 @@
 namespace MRBS;
 
 // +---------------------------------------------------------------------------+
-// | Meeting Room Booking System.
+// | Meeting roomControlleur Booking System.
 // +---------------------------------------------------------------------------+
 // | Grabs the names and values of the $_POST and $_GET variables.
 // |---------------------------------------------------------------------------+

@@ -27,14 +27,23 @@ class EventCalendar
         $this->end = $value['end'];
     }
 
+    /**
+     * @return int
+     */
     public function getId(): int {
         return $this->id;
     }
 
+    /**
+     * @return string
+     */
     public function getName(): string {
         return $this->name;
     }
 
+    /**
+     * @return mixed
+     */
     public function getDescription() {
         return $this->description;
     }

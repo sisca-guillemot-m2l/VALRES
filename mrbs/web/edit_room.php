@@ -75,7 +75,7 @@ function get_custom_fields($data)
   
   foreach ($fields as $field)
   {
-    if (!in_array($field['name'], $standard_fields['room']))
+    if (!in_array($field['name'], $standard_fields['roomControlleur']))
     {
       $label = get_loc_field_name($tbl_room, $field['name']);
       $name = VAR_PREFIX . $field['name'];
@@ -153,7 +153,7 @@ function get_fieldset_general($data)
         ->addSelectOptions($areas, $data['area_id'], true);
   $fieldset->addElement($field);
   
-  // Room name
+  // roomControlleur name
   $field = new FieldInputText();
   $field->setLabel(get_vocab('name'))
         ->setControlAttributes(array('name'     => 'room_name',
@@ -279,7 +279,7 @@ $attributes = array('id'     => 'edit_room',
 $legend = ($is_admin) ? get_vocab('editroom') : get_vocab('viewroom');
                     
 $form->setAttributes($attributes)
-     ->addHiddenInput('room', $data['id'])
+     ->addHiddenInput('roomControlleur', $data['id'])
      ->addHiddenInput('old_area', $data['area_id'])
      ->addHiddenInput('old_room_name', $data['room_name']);
 

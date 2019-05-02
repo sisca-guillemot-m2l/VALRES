@@ -26,9 +26,9 @@ function generate_room_delete_form($room, $area)
   $form->setAttributes($attributes);
   
   // Hidden inputs
-  $hidden_inputs = array('type' => 'room',
+  $hidden_inputs = array('type' => 'roomControlleur',
                          'area' => $area,
-                         'room' => $room);
+                         'roomControlleur' => $room);
   $form->addHiddenInputs($hidden_inputs);
   
   // The button
@@ -181,7 +181,7 @@ function generate_new_room_form()
   $form->setAttributes($attributes);
 
   // Hidden inputs
-  $hidden_inputs = array('type' => 'room',
+  $hidden_inputs = array('type' => 'roomControlleur',
                          'area' => $area);
   $form->addHiddenInputs($hidden_inputs);
   
