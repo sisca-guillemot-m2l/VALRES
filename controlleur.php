@@ -2,6 +2,7 @@
     session_start();
 
     define("PATHROOT", __DIR__);
+    var_dump(PATHROOT);
     define("DS", DIRECTORY_SEPARATOR); // permet de mettre le / ou \ en fonction de linux ou windows
     define("PATHVIEW",PATHROOT.DS.'view'.DS);
     define("PATHMODELE", PATHROOT.DS.'modele'.DS);

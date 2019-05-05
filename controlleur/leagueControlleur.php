@@ -18,6 +18,7 @@ class leagueControlleur
     public function getListLeague () {
         $bdd = new bddControlleur();
         $bdd->_connect();
-        return $bdd->queryStatement("SELECT name FROM league");
+        return $bdd->queryStatement("SELECT name,id FROM league");
     }
+
 }

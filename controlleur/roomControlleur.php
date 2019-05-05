@@ -16,4 +16,11 @@ class roomControlleur
         // var_dump($idLeague);
         $bdd->queryStatement("INSERT INTO room (number, capacity, idLeague) VALUES ('$number', '$capacity', '$idLeague')");
     }
+
+    public function getListRoomByLeague ($league)
+    {
+        $bdd = new bddControlleur();
+        $bdd->_connect();
+        return $bdd->queryStatement("SELECT number FROM room WHERE idLeague = '$league'");
+    }
 }

@@ -1,9 +1,7 @@
 <?php
+session_start();
 require_once ("header.php");
-require_once ("../modele/EventValidator.php");
-require_once("../modele/Validator.php");
-require_once ("../modele/EventCalendar.php");
-require_once ("../modele/Events.php");
+
 
 
 $data = [];
@@ -45,6 +43,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
  * Pour plus de condition de gestion des erreurs : vidéo 3 time stamp : 24min
  */
 
+    /* recupération du formulaire de la ligue choisi */
+    $choosenLeague = $_POST['league'];
+    var_dump($choosenLeague);
+
 ?>
 
     <?php if (!empty($errors)):?>
@@ -70,6 +72,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
                     <?php if($errors['date']): ?>
                         <small class="form-text text-muted"><?=$errors['date']?></small>
                     <?php endif; ?>
+                </div>
+            </div>
+        </div>
+
+        <?php
+        $room = new roomControlleur();
+        $tabRoom = $room->getListRoomByLeague($choosenLeague);
+        var_dump($tabRoom);
+        ?>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="dropdown">
+                    <select id="league" name="league">
+                        <?php foreach ($tabRoom as $var): ?>
+                            <option value="$cpt"><?= $var['number'];?></option>
+                        <?php endforeach;?>
+                    </select>
                 </div>
             </div>
         </div>

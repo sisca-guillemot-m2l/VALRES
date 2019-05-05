@@ -70,6 +70,6 @@
         }
         endfor; ?>
     </table>
-<a href="/calendar/add.php" class="calendar__button">+</a>
+<a href="/calendar/addFormulaire.php" class="calendar__button">+</a>
 </div>
 <?php require 'footer.php' ?>
