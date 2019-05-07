@@ -14,6 +14,8 @@
         $start = $month->getStartingDay();//->modify('last monday');
         $calendar = $month->getWeeks();
         $event = $events->getEventsBetweenByDay($calendar['dateDebut'], $calendar['dateFin']);
+        var_dump($calendar['dateDebut']);
+        var_dump($calendar['dateFin']);
         //$event = $events->getEventsBetween($calendar['dateDebut'], $calendar['dateFin']);
         //var_dump($event);
 ?>
@@ -51,7 +53,7 @@
                     <?php if($i===0):?>
                         <div class="calendar__weekday"><?=$day;?></div>
                     <?php endif;?>
-                    <div class="calendar__day"><?=$date->format('d');?></div> <!-- {} permet de faire plusieurs opérations -->
+                    <a href="dayCalendar.php?day=<?=$date->format('d');?>&month=<?=$date->format('m');?>&year=<?=$date->format('Y');?>" class="calendar__day"><?=$date->format('d');?></a> <!-- {} permet de faire plusieurs opérations -->
                 <?php foreach ($eventsForDay as $ev):?>
                     <div class="calendar__event">
                         <?=

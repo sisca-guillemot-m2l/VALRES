@@ -1,7 +1,7 @@
 <?php
-    require 'header.php';
-    require "../modele/Events.php";
-    require "../modele/EventCalendar.php";
+    require_once 'header.php';
+    require_once "../modele/Events.php";
+    require_once "../modele/EventCalendar.php";
     $events = new \modele\Events\Events();
     if (!isset($_GET['id'])) {
         header('location: /calendar/404.php');
@@ -21,6 +21,9 @@
     <li>Heure de démarrage: <?= $eventC->getStart()->format('H:i'); ?></li>
     <li>Heure de fin: <?= $eventC->getEnd()->format('H:i'); ?></li>
     <li>Description:<br> <?= htmlentities($eventC->getDescription());?></li>
+
+
+    <?php ?>
 </ul>
 
 <?php
