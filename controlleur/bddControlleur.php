@@ -19,8 +19,14 @@ class bddControlleur
     {
         try {
             $sth = $this->dbh->prepare($query);
+            //var_dump($values);
             $sth->execute($values);
+            //var_dump($query);
+            //echo $this->dbh->lastInsertId();
             $result = $sth->fetch(PDO::FETCH_ASSOC);
+            //var_dump($values);
+            //var_dump($this->dbh->errorInfo());
+            var_dump($sth->debugDumpParams());
             return $result;
         }
         catch (PDOException $e) {

@@ -54,6 +54,18 @@
                             </div>
                             <input type="email" class="form-control" name="email" placeholder="email">
                         </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="number" class="form-control" name="phone" placeholder="Numéro de telephone">
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="number" class="form-control" name="memberNum" placeholder="Numéro d'adhérent">
+                        </div>
                         <div class="d-flex justify-content-center links">
                             <input type="submit" value="register">
                         </div>

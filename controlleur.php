@@ -52,6 +52,7 @@
         var_dump($_SESSION['id']);
         var_dump($_SESSION['statut']);
         var_dump($_SESSION['name']);
+        var_dump($_SESSION['email']);
     }
     if (is_null($content))
     {

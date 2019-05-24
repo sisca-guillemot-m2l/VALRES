@@ -17,10 +17,12 @@ class userControlleur
 
         if  (password_verify ( $password , $checkPassword))
         {
-            $value = $bdd->queryDisplay('SELECT id,statut,username FROM user WHERE username=:username', array('username'=>$username));
+            $value = $bdd->queryDisplay('SELECT id,statut,username,email,phone FROM user WHERE username=:username', array('username'=>$username));
             $_SESSION['id'] = $value['id'];
             $_SESSION['statut'] = $value['statut'];
             $_SESSION['name'] = $value['username'];
+            $_SESSION['email'] = $value['email'];
+            $_SESSION['phone'] = $value['phone'];
             //echo $value['id'];
             //echo $value['statut'];
             header ('refresh:0;url=?page=userpage');
@@ -38,15 +40,32 @@ class userControlleur
         $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
         $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
         $hashed = password_hash($password,PASSWORD_BCRYPT);
+        $memberNum = filter_input(INPUT_POST, 'memberNum', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+        $phone = filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
         $bdd = new bddControlleur();
         $bdd->_connect();
         $check = $bdd->queryDisplay('SELECT username FROM user WHERE username=:username', array(':username'=>$username));
 
+        /*if ($check['username'] != $username) {
+            $bdd->queryDisplay('INSERT INTO user (username, password, email, statut, memberNum, phone) VALUES (:username,:hashed,:email,"user",:memberNum,:phone)', array(':username'=>$username, ':hashed'=>$hashed, ':email'=>$email, ':memberNum='=>$memberNum, ':phone'=>$phone));
+
+        }*/
         if ($check['username'] != $username) {
-            $bdd->queryDisplay('INSERT INTO user (username, password, email, statut) VALUES (:username,:hashed,:email,"user")', array(':username'=>$username, ':hashed'=>$hashed, ':email'=>$email));
+            //$bdd->querySimple('INSERT INTO user (username, password, email, statut, memberNum, phone) VALUES ("'.$username.'","'.$hashed.'","'.$email.'","user",'.$memberNum.','.$phone.')');
+            $bdd->queryDisplay('INSERT INTO user (username, password, email, memberNum, phone, statut) VALUES 
+                (:username,:hashed,:email,:memberNum,:phone,"user" )',
+                array(
+                    ':username'=>$username,
+                    ':hashed'=>$hashed,
+                    ':email'=>$email,
+                    ':memberNum'=>(int)$memberNum,
+                    ':phone'=>(int)$phone)
+            );
+
         }
-        header ('refresh:0;url=?page=accueil');
+        die(__LINE__);
+        //header ('refresh:0;url=?page=accueil');
     }
 
     public function getStatutById ($id)

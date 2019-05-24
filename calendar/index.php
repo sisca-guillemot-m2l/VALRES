@@ -14,8 +14,8 @@
         $start = $month->getStartingDay();//->modify('last monday');
         $calendar = $month->getWeeks();
         $event = $events->getEventsBetweenByDay($calendar['dateDebut'], $calendar['dateFin']);
-        var_dump($calendar['dateDebut']);
-        var_dump($calendar['dateFin']);
+        //var_dump($calendar['dateDebut']);
+        //var_dump($calendar['dateFin']);
         //$event = $events->getEventsBetween($calendar['dateDebut'], $calendar['dateFin']);
         //var_dump($event);
 ?>
